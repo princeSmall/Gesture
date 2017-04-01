@@ -24,14 +24,23 @@ Integrated click, double click, drag, long press, zoom and other gestures, encap
  *****/
  
  -(UIView *)selectView:(UIView *)selectView{
+ 
     NSInteger  tag = selectView.tag;
+    
     if (tag == 101) {
+    
         selectView = self.gestureView;
+        
     }else if (tag == 102){
+    
         selectView = self.gestureView2;
+        
     }else if (tag == 103){
+    
         selectView = self.gestureView3;
+        
     }
+    
     return selectView;
 
 }
